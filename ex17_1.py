@@ -8,8 +8,7 @@ print "\nCopying from %s to %s" % (from_file, to_file)
 # we could do these two on one line, how?
 
 
-print "The input file is %d bytes long" % len(indata)
-
+print "The input file is %d bytes long" % len(indata);
 print "Does the output file exist? %r" % exists(to_file)
 print "Ready, hit RETURN to continue, CTRL-C to abort"
 raw_input('>')
