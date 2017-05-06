@@ -32,13 +32,6 @@ print "\n Michigan has: ", cities[states['Michigan']]
 print "Florida has: ", cities[states['Florida']]
 print "\n"
 
-
-
-
-
-
-
-
 # print every state abbreviation
 print "-" * 10
 for state, abbrev in states.items():
@@ -53,7 +46,7 @@ for abbrev, city in cities.items():
 # now do both at the same time
 print "-" * 10
 for state, abbrev in states.items():
-    print "%s state is abbreviated %s and has gity %s" % (state, abbrev, cities[abbrev])
+    print "%s state is abbreviated %s and has city %s" % (state, abbrev, cities[abbrev])
 
 
 print "-" *10

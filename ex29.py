@@ -2,6 +2,7 @@ people = int(raw_input("\nType people: >"))
 cats = int(raw_input("Type cats: >"))
 dogs = int(raw_input("Type dogs: >"))
 print "\n"
+
 if people < cats:
     print "Too many cats! The world is doomed!"
 if people > cats:
