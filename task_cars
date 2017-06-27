@@ -1,0 +1,33 @@
+
+class Car(object):
+    def __init__(self, mark, colour, speed_max):
+        self.mark = mark
+        self.colour = colour
+        self.speed_max = speed_max
+
+    def distance(self, speed_up, t_max):
+        self.speed_up = speed_up
+        self.t = t_max
+        t_sec = 0
+        dis = 0
+        mean_speed = self.speed_up / 2
+        while t_sec <= self.t:
+          t_sec += 1
+          if self.speed_up < self.speed_max:
+              dis += t_sec * mean_speed / 3600
+          else:
+              dis += t_sec * self.speed_max / 3600
+          self.speed_up += self.speed_up
+
+          return dis
+
+car1 = Car('bmv', 'green', 180)
+car2 = Car('vw', 'blue', 160)
+car3 = Car('au', 'white', 170)
+car4 = Car('xx', 'black', 150)
+t_max = 60
+dis1 = car1.distance(20, t_max)
+dis2 = car2.distance(30, t_max)
+dis3 = car3.distance(25, t_max)
+dis4 = car4.distance(40, t_max)
+print " Car %s colour % speed_max = %d distance = %d" % (car1.mark, car1.colour, car1. speed_max, dis1)
